@@ -1,0 +1,102 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <title> Forma </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="formStyle.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <form method = "POST" action = "/">
+            <div class="row">
+                <div class="col-15">
+                    <label for="fname"> Ime<font color="red">*</font> </label>  
+                </div>
+                <div class="col-75">
+                    <input type = "text" name = "ime" placeholder="Unesite Vase ime..." required >
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-15">
+                    <label for="lname"> Prezime<font color="red">*</font> </label> 
+                </div>
+                <div class="col-75">
+                    <input type = "text" name = "prezime" placeholder="Unesite Vase prezime..." required> 
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-15">
+                    <label for="email"> Email<font color="red">*</font> </label>
+                </div>
+                <div class="col-75">
+                    <input type = "email" name = "email" placeholder="Unesite Vasu email adresu..." required>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-15">
+                    <label for="website"> Website </label> 
+                </div>
+                <div class="col-75">
+                    <input type = "url" name = "website" placeholder="Unesite Vas website...">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-15">
+                    <label for="rukovodilac"> Rukovodilac </label> 
+                </div>
+                <div class="col-75">
+                    <input type = "checkbox" name = "rukovodilac" id="rukovodilac">
+                </div>
+            </div>
+
+            <div id="hidden">
+                <div class="row">
+                    <div class="col-15">
+                        <label for="zvanje"> Zvanje </label>
+                    </div>
+                    <div class="col-75">
+                        <input type = "text" name = "zvanje" placeholder="Unesite Vase zvanje..."> 
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-15">
+                        <label for="bonus"> Bonus </label>
+                    </div>
+                    <div class="col-75">
+                        <input type = "number" name = "bonus" value= "0">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-15">
+                    <input type = "submit" name = "submit" value="Posalji">
+                </div>
+                <div class="col-75">
+                    <input type = "reset" name = "reset" value="Resetuj">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>
